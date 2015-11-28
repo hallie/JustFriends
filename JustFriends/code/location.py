@@ -1,5 +1,8 @@
 import requests, json, os
 
+###
+# TODO: Find a better geolocator API (issues/5)
+###
 def get_current_geolocation_from_ip():
     GEOLOCATION_URL = 'http://freegeoip.net/json'
     RESPONSE = requests.get(GEOLOCATION_URL)
@@ -10,26 +13,33 @@ def get_current_geolocation_from_ip():
         return [str(lat), str(lon)]
     return [None, None]
 
+###
+# @function get_current_geolocation_from_address
+# @param {string} address - The address of the user's location.
+# @return {list=[None, None]} [LAT, LON] - List containing the Lat/Lon values. 
+###
 def get_current_geolocation_from_address(address):
+    # Base URL for Google Geocode API
     GEOLOCATION_URL = 'https://maps.googleapis.com/maps/api/geocode/json?'
-    address = address.split()
-    address = '+'.join(address)
+    
+    # Replaces spaces with '+' in passed address string.
+    address = address.replace(' ', '+')
+    
+    # Adds the address and api key to the request url.
     GEOLOCATION_URL += ('address=' + address)
     GEOLOCATION_URL += ('&key=' + os.environ['GOOGLE_PLACES_API_KEY'])
-    RESPONSE = requests.get(GEOLOCATION_URL)
-    RESPONSE_JSON = json.loads(RESPONSE.text)
-    if (u'results' in RESPONSE_JSON):
-        RESPONSE_JSON = RESPONSE_JSON[u'results']
-        if ((len(RESPONSE_JSON) > 0) and (u'geometry' in RESPONSE_JSON[0])):
-            RESPONSE_JSON = RESPONSE_JSON[0][u'geometry']
-            if (u'location' in RESPONSE_JSON):
-                RESPONSE_JSON = RESPONSE_JSON[u'location']
-                if ((u'lat' in RESPONSE_JSON) and (u'lng' in RESPONSE_JSON)):
-                    lat = RESPONSE_JSON['lat']
-                    lon = RESPONSE_JSON['lng']
-                    return [str(lat), str(lon)]
-    return [None, None]
     
-#address = '2211 Mission Street, San Francisco, CA'
-#returned = "u'location': {u'lat': 37.7615487, u'lng': -122.4191631}"
-#print get_current_geolocation_from_address(address)
+    # Sets the returned object to the RESPONSE variable.
+    RESPONSE = requests.get(GEOLOCATION_URL)
+    RESPONSE_JSON = json.loads(RESPONSE.text).get('results')
+    
+    # Initializes the Lat/Lon values to None
+    LAT = LON = None
+    
+    # If the length of the results is greater than zero, attempts to get the lat/lon
+    if ((RESPONSE_JSON != None) and (len(RESPONSE_JSON) > 0)):
+        RESPONSE_JSON = RESPONSE_JSON[0].get('geometry').get('location')
+        LAT = RESPONSE_JSON.get('lat')
+        LON = RESPONSE_JSON.get('lng')
+    
+    return [LAT, LON]

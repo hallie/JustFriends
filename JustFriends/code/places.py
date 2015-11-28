@@ -1,4 +1,4 @@
-import os
+import os, requests
 
 ###
 # @function reformat_get_request_args
@@ -54,9 +54,11 @@ def create_request_url(request_type, reformatted_args):
     else:
         return "Error: Not Valid Request Type"
 
-
-import requests
-
+###
+# @function request_response_json
+# @param {string} REQUEST_URL - The url of the request to be sent.
+# @return {json={}} RESPONSE_JSON - The request response object.
+###
 def request_response_json(REQUEST_URL):
     try:
         RESPONSE = requests.get(REQUEST_URL)
@@ -66,10 +68,6 @@ def request_response_json(REQUEST_URL):
     except requests.ConnectionError:
         print "Failed to Connect"
         return {}
-    
-
-def sort_places_by_distance(RESPONSE_JSON):
-    pass
 
 
 ###############################################################################
