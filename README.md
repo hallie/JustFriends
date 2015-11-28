@@ -27,11 +27,11 @@ You either do this by following the instructions through the above link, or by r
 - [ ] Create User DB
  - [ ] Setup OAuth
    - [ ] Login with Facebook
-   - [ ] Login with Twitter
-   - [ ] Login with G+
+    - [ ] Login with Twitter
+    - [ ] Login with G+
  - [ ] Setup User Profiles
  - [ ] Setup User Rating System
    - [ ] Users rate other Users
-   - [ ] User has own rating
+    - [ ] User has own rating
 - [ ] Create Android Version
 - [ ] Create iOS Version
