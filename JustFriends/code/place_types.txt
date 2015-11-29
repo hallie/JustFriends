@@ -1,0 +1,90 @@
+ENTERTAINMENT:
+- art_gallery
+- aquarium
+- amusement_park
+- casino
+- zoo
+- bowling_alley
+- library
+- movie_theater
+- museum
+- night_club
+- park
+- bowling_alley
+- stadium
+
+TRAVEL:
+- airport
+- bus_station
+- campground
+- car_rental
+- lodging
+- subway_station
+- taxi_stand
+- train_station
+- rv_park
+- travel_agency
+
+SHOPPING:
+- convenience_store
+- department_store
+- electronics_store
+- car_dealer
+- clothing_store
+- book_store
+- bicycle_store
+- jewelry_store
+- grocery_or_supermarket
+- hardware_store
+- florist
+- furniture_store
+- shoe_store
+- shopping_mall
+- liquor_store
+- pet_store
+- store
+- home_goods_store
+
+FOOD:
+- cafe
+- bakery
+- bar
+- food
+- restaurant
+
+HEALTH/BEAUTY:
+- dentist
+- doctor
+- spa
+- beauty_salon
+- hair_care
+- gym
+- health
+pharmacy
+
+EMOTIONAL/SPIRITUAL SUPPORT:
+- funeral_home
+- cemetery
+- church
+- hindu_temple
+- synagogue
+- place_of_worship
+- mosque
+- physiotherapist
+- hospital
+- courthouse
+- veterinary_care
+
+MISC:
+- car_repair
+- car_wash
+- police
+- post_office
+- real_estate_agency
+- laundry
+- local_government_office
+- embassy
+- city_hall
+- school
+- storage
+- university
