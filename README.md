@@ -5,8 +5,7 @@ Make sure that [Django](https://github.com/django/django) and [Django Rest Frame
 
 You either do this by following the instructions through the above links, or by running:
 ```bash
-    pip install django
-    pip install djangorestframework
+    pip install -r requirements.txt
 ```
 Also make sure to obtain an API Key from the Google Developer Console, for both [Places](https://developers.google.com/places/web-service/) and [Geocoder](https://developers.google.com/maps/documentation/geocoding/get-api-key).
 Then set this key as an enviroment variable in your `~/.bash_profile` file (or wherever you normally keep them).
