@@ -19,6 +19,11 @@ Don't forget the [Django Secret Key](http://www.miniwebtool.com/django-secret-ke
     export JUSTFRIENDS_APP_SECRET='***SECRET KEY GOES HERE***'
 ```
 
+Then make sure to migrate the database tables
+```bash
+python manage.py migrate
+```
+
 ### Start Project
 ```bash
     python manage.py runserver 8080
