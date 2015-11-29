@@ -14,6 +14,10 @@ Then set this key as an enviroment variable in your `~/.bash_profile` file (or w
     export GOOGLE_PLACES_API_KEY='***API KEY GOES HERE***'
 ```
 
+Don't forget the [Django Secret Key](http://www.miniwebtool.com/django-secret-key-generator/)! (I know I almost did)
+```bash
+    export JUSTFRIENDS_APP_SECRET='***SECRET KEY GOES HERE***'
+```
 
 ### Start Project
 ```bash
