@@ -39,7 +39,7 @@ def get_current_geolocation_from_address(address):
     # If the length of the results is greater than zero, attempts to get the lat/lon
     if ((RESPONSE_JSON != None) and (len(RESPONSE_JSON) > 0)):
         RESPONSE_JSON = RESPONSE_JSON[0].get('geometry').get('location')
-        LAT = RESPONSE_JSON.get('lat')
-        LON = RESPONSE_JSON.get('lng')
+        LAT = str(RESPONSE_JSON.get('lat'))
+        LON = str(RESPONSE_JSON.get('lng'))
     
     return [LAT, LON]
