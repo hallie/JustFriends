@@ -1,4 +1,4 @@
-# JustFriends (FYI)
+# JustFriends (FYI) [![Build Status](https://travis-ci.org/rhallie15/JustFriends.svg?branch=master)](https://travis-ci.org/rhallie15/JustFriends)
 
 ### Setup Environment
 Make sure that [Django](https://github.com/django/django) and [Django Rest Framework](https://github.com/tomchristie/django-rest-framework) are installed.
