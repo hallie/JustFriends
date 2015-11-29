@@ -1,11 +1,12 @@
 # JustFriends (FYI)
 
 ### Setup Environment
-Make sure that [Django](https://github.com/django/django) is installed.
+Make sure that [Django](https://github.com/django/django) and [Django Rest Framework](https://github.com/tomchristie/django-rest-framework) are installed.
 
-You either do this by following the instructions through the above link, or by running:
+You either do this by following the instructions through the above links, or by running:
 ```bash
     pip install django
+    pip install djangorestframework
 ```
 Also make sure to obtain an API Key from the Google Developer Console, for both [Places](https://developers.google.com/places/web-service/) and [Geocoder](https://developers.google.com/maps/documentation/geocoding/get-api-key).
 Then set this key as an enviroment variable in your `~/.bash_profile` file (or wherever you normally keep them).
