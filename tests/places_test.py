@@ -1,6 +1,6 @@
 import os, unittest, test_helper
 
-import places
+import places_to_go.places as places
 
 class TestPlacesMethods(unittest.TestCase):
 

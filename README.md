@@ -21,7 +21,7 @@ Don't forget the [Django Secret Key](http://www.miniwebtool.com/django-secret-ke
 
 Then make sure to migrate the database tables
 ```bash
-python manage.py migrate
+    python manage.py migrate
 ```
 
 ### Start Project

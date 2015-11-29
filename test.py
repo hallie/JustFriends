@@ -1,6 +1,6 @@
 import unittest
-from JustFriends.code.tests.location_test import TestLocationMethods
-from JustFriends.code.tests.places_test import TestPlacesMethods
+from tests.location_test import TestLocationMethods
+from tests.places_test   import TestPlacesMethods
 
 if __name__ == '__main__':
     places_test_suite   = unittest.TestLoader().loadTestsFromTestCase(TestPlacesMethods)
