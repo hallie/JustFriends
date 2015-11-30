@@ -14,12 +14,25 @@ Then set this key as an enviroment variable in your `~/.bash_profile` file (or w
     export GOOGLE_PLACES_API_KEY='***API KEY GOES HERE***'
 ```
 
+To use the OAuth features, you'll need API keys and secrets from [Twitter](https://apps.twitter.com/), [Facebook](https://developers.facebook.com/apps/), and [Google+](https://developers.google.com/+/web/api/rest/oauth).
+
+```bash
+    export JF_TWITTER_API_KEY='***API KEY GOES HERE***'
+    export JF_TWITTER_API_SECRET='***API SECRET GOES HERE***'
+    
+    export JF_FACEBOOK_API_KEY='***API KEY GOES HERE***'
+    export JF_FACEBOOK_API_SECRET='***API SECRET GOES HERE***'
+    
+    export JF_GOOGLEPLUS_API_KEY='***API KEY GOES HERE***'
+    export JF_GOOGLEPLUS_API_SECRET='***API SECRET GOES HERE***'
+```
+
 Don't forget the [Django Secret Key](http://www.miniwebtool.com/django-secret-key-generator/)! (I know I almost did)
 ```bash
     export JUSTFRIENDS_APP_SECRET='***SECRET KEY GOES HERE***'
 ```
 
-Then make sure to migrate the database tables
+Then make sure to migrate the database tables.
 ```bash
     python manage.py migrate
 ```
