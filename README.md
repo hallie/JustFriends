@@ -41,12 +41,12 @@ Then make sure to migrate the database tables
  - [ ] Map Google Places to Yelp Listings
 - [ ] Create User DB
  - [ ] Setup OAuth
-   - [ ] Login with Facebook
-    - [ ] Login with Twitter
-    - [ ] Login with G+
+   - [ ] Login with Facebook :blue_book:
+    - [ ] Login with Twitter :bird:
+    - [ ] Login with G+ :see_no_evil: :speak_no_evil: :hear_no_evil:
  - [ ] Setup User Profiles
  - [ ] Setup User Rating System
    - [ ] Users rate other Users
     - [ ] User has own rating
-- [ ] Create Android Version
-- [ ] Create iOS Version
+- [ ] Create Android Version :pager:
+- [ ] Create iOS Version :iphone:
