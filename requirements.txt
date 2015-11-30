@@ -2,4 +2,3 @@ django
 djangorestframework
 oauth2
 requests
-urlparse
