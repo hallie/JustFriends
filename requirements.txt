@@ -1,3 +1,3 @@
-django
-djangorestframework
-requests
+Django==1.8.7
+djangorestframework==3.3.1
+requests==2.8.1
