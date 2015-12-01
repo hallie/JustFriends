@@ -63,3 +63,8 @@ Then make sure to migrate the database tables.
     - [ ] User has own rating
 - [ ] Create Android Version :pager:
 - [ ] Create iOS Version :iphone:
+
+#Copyright (C) Hallie Lomax - All Rights Reserved
+###Unauthorized copying of these files, via any medium is strictly prohibited
+###Proprietary and confidential
+###Written by [Hallie Lomax](justfriends@hallielomax.com), November 2015
