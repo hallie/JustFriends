@@ -15,7 +15,6 @@ def reformat_get_request_args(ARGS):
         # Converts to string, just in case its lat/lon.
         if (type(ARGS[arg]) is list):
             key_val += ','.join(ARGS[arg])
-        #    key_val += ','.join(str(x) for x in ARGS[arg])
         # Converts to a string if not a string.
         elif (type(ARGS[arg]) != str):
             key_val += str(ARGS[arg])
@@ -68,25 +67,3 @@ def request_response_json(REQUEST_URL):
     except requests.ConnectionError:
         print "Failed to Connect"
         return {}
-
-
-###############################################################################
-#                 Stuff below this line doesn't really matter                 #
-###############################################################################
-'''
-from location import get_current_geolocation_from_ip
-ARGS = {
-            'LOCATION': get_current_geolocation_from_ip(),
-            'RADIUS': 500,
-            'TYPES': ['food'],
-            'NAME': 'cruise'#,
-            #'RANKBY': 'distance'
-}
-
-reformatted_args = reformat_get_request_args(ARGS)
-request_url = create_request_url('NEARBY', reformatted_args)
-print request_url
-response = request_response_json(request_url)
-print response
-
-'''
